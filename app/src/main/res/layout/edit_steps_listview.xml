@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="10dp">
+
+
+            <TextView
+
+                android:id="@+id/stepNameId"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/identifiers_layout"
+                android:fontFamily="@font/lato_thin"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/isCompleteId"
+                android:layout_width="33dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/edit_step_incomplete_button"
+                android:fontFamily="@font/lato_thin"
+                android:text="X"
+                android:textSize="12sp"
+                tools:layout_marginLeft="300dp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/stepContentId"
+            android:layout_width="510dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step_background"
+            android:fontFamily="@font/lato_thin"
+            android:lines="1"
+            tools:fontFamily="@font/lato_thin"
+            tools:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bakry.AM02150_toDoList.ViewTasks">
+
+
+    <item
+        android:id="@+id/addTaskId"
+        android:orderInCategory="100"
+        android:title="@string/add_new_task"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mainActivityDashboardId"
+        android:orderInCategory="100"
+        android:title="@string/dashboard_main"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/completedTasksId"
+        android:orderInCategory="100"
+        android:title="@string/completed_tasks"
+        app:showAsAction="never" />
+
+
+</menu>

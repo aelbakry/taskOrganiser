@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bakry.AM02150_toDoList.ViewSteps"
+    tools:showIn="@layout/activity_edit_steps"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="801dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="22dp">
+
+
+        <TextView
+
+            android:id="@+id/stepsTitleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/identifiers_layout"
+            android:fontFamily="@font/lato_thin"
+            android:text="@string/steps"
+            android:textColor="@android:color/black"
+
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <ListView
+            android:id="@+id/listviewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/step_outline"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/doneButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/add_button_layout"
+                android:fontFamily="@font/lato_thin"
+                android:layout_marginTop="50dp"
+                android:text="@string/done" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

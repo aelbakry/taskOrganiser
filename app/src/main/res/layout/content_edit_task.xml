@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bakry.AM02150_toDoList.EditTask"
+    tools:showIn="@layout/activity_edit_task">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/overviewTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/identifiers_layout"
+                android:fontFamily="@font/lato_thin"
+                android:text="@string/overviewDisplay"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/dueDateDataId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/main_date_textview"
+                    android:fontFamily="@font/advent_pro_extralight"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp" />
+
+                <TextView
+                    android:id="@+id/dueDateDataId2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/main_date_textview"
+                    android:fontFamily="@font/advent_pro_extralight"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp" />
+
+                <TextView
+                    android:id="@+id/dueDateDataId3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/main_date_textview"
+                    android:fontFamily="@font/advent_pro_extralight"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/overviewData"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_layout"
+            android:fontFamily="@font/lato_thin"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <TextView
+
+                android:id="@+id/viewStepsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/identifiers_layout"
+                android:fontFamily="@font/lato_thin"
+                android:text="Steps"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/viewStepsID"
+                android:layout_width="120dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_steps_button_layout"
+                android:fontFamily="@font/lato_thin"
+                android:text="View Steps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/footerId2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/main_date_textview"
+                android:fontFamily="@font/lato_thin"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:progressDrawable="@drawable/task_progressbar" />
+
+            <Button
+                android:id="@+id/checkLocationButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/add_location_button"
+                android:fontFamily="@font/lato_thin"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Check Route" />
+
+            <Button
+                android:id="@+id/taskCompletedId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/add_button_layout"
+                android:fontFamily="@font/lato_thin"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="✓           Complete" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

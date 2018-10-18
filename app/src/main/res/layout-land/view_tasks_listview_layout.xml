@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/custom_border"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:layout_width="850dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/taskOverviewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:background=" @drawable/identifiers_layout"
+                    android:fontFamily="@font/lato_thin"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    tools:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/taskDueDateId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/task_list_due_date"
+                    android:fontFamily="@font/lato_thin"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    tools:fontFamily="@font/lato_thin"
+                    tools:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/taskProgressId"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/task_list_progressbar" />
+
+            <!--<ProgressBar-->
+            <!--android:id="@+id/taskProgressId"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/task_list_progressbar" />-->
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=">"
+            tools:textSize="30sp" />
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/floatingActionButton2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="false"/>-->
+        <!--&lt;!&ndash;android:backgroundTint="@android:color/darker_gray"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;app:rippleColor="@android:color/darker_gray" />&ndash;&gt;-->
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
